@@ -1,0 +1,6 @@
+{
+  "name": "Dong Zong Training Management",
+  "description": "Bilingual Training Management System (TMS) for Dong Zong / 董总 allowing staff and HR admins to manage staff training records, verify hours, calculate training points, view upcoming training announcements, and manage company policies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

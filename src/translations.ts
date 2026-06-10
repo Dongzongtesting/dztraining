@@ -1,0 +1,232 @@
+export type Language = 'en' | 'zh';
+
+export const TRANSLATIONS = {
+  en: {
+    appName: 'Dong Zong Training Management System',
+    appSubName: 'Staff Training & Professional Certification Tracking Portal',
+    roleLabel: 'Current Role',
+    switchRole: 'Switch Identity',
+    staffUser: 'Dong Zong Staff',
+    hrAdmin: 'HR Administrator',
+    langToggle: '中文版',
+    logout: 'Logout',
+    welcomeBack: 'Welcome back',
+    systemTitle: 'Dong Zong TMS',
+    
+    // Tabs / Navigation
+    dashboard: 'Dashboard',
+    myRecords: 'My Training Records',
+    submitRecord: 'Submit Training',
+    upcomingTraining: 'Upcoming Opportunities',
+    trainingPolicy: 'Company Policy',
+    allSubmissions: 'All Submissions',
+    staffProfiles: 'Staff Profiles',
+    pointScheme: 'Point Calculation Rules',
+    generateReports: 'Reports & Audits',
+
+    // Statuses
+    pending: 'Pending Verification',
+    verified: 'Verified',
+    rejected: 'Rejected',
+    reqCorrection: 'Correction Req.',
+
+    // Fields Description
+    staffName: 'Staff Name',
+    staffChineseName: 'Chinese Name',
+    department: 'Department / Unit',
+    trainingTitle: 'Training Title',
+    organiser: 'Training Organiser',
+    trainingType: 'Training Type',
+    trainingDate: 'Training Date',
+    trainingEndDate: 'End Date (Optional)',
+    lecturer: 'Lecturer / Trainer',
+    trainingTime: 'Daily Time Slot / Schedule',
+    durationHours: 'Duration (Hours)',
+    venuePlatform: 'Venue / Platform',
+    description: 'Description of Content',
+    supportDocument: 'Supporting Document (PDF, Image)',
+    submissionDate: 'Submission Date',
+    status: 'Status',
+    hrRemarks: 'HR Admin Remarks',
+    uploadPlaceholder: 'Drag & drop file here, or click to browse',
+    uploadSuccess: 'File uploaded successfully',
+
+    // Point calculations
+    accumulatedPoints: 'Verified Points',
+    accumulatedHours: 'Verified Hours',
+    pointsToMax: 'Remaining to Yearly Max',
+    pendingHours: 'Pending Approval Hours',
+    yearlyMaxReached: 'Yearly Max Reached!',
+    ruleFormula: 'Point Formula Rule',
+    pointsShort: 'pts',
+    hoursShort: 'hrs',
+    maximumAllowedAnnual: 'Max Points per Year',
+
+    // Buttons / actions
+    submit: 'Submit Request',
+    edit: 'Edit Record',
+    delete: 'Delete',
+    cancel: 'Cancel',
+    saveChanges: 'Save Changes',
+    exportCsv: 'Export to CSV',
+    exportExcel: 'Export to Excel',
+    verify: 'Verify & Approve',
+    reject: 'Reject Submission',
+    requestCorrection: 'Request Correction',
+    addRemarks: 'Update Remarks',
+    addAnnouncement: 'Post New Announcement',
+    editAnnouncement: 'Edit Announcement',
+    policyEdit: 'Edit Policy',
+    searchPlaceholder: 'Search by title, organiser, or venue...',
+    filterDepartment: 'All Departments',
+    filterStatus: 'All Statuses',
+    filterType: 'All Types',
+
+    // Announcement components
+    targetParticipants: 'Target Participants',
+    category: 'Category',
+    deadline: 'Registration Deadline',
+    regLink: 'Registration Link',
+    contactPerson: 'Contact Person',
+    archive: 'Archive',
+    publish: 'Publish',
+    activeAnnouncements: 'Active Trainings',
+    archivedAnnouncements: 'Archived Announcements',
+
+    // HR Dashboard summary
+    totalSubmissions: 'Total Submissions',
+    recordsVerified: 'Verified Records',
+    recordsRejected: 'Rejected Records',
+    reachedTarget: 'Reached 10 Points Target',
+    notReachedTarget: 'Below Annual Target',
+    deptSummary: 'Department Analysis',
+    actions: 'Actions',
+
+    // Reports Title
+    reportType: 'Report Type',
+    generateButton: 'Generate Selected Report',
+    exportReport: 'Export Generated Dataset',
+    
+    // Types translations
+    internal: 'Internal Training',
+    external: 'External Training',
+    seminar: 'Seminar / Talk',
+    workshop: 'Workshop',
+    conference: 'Conference',
+    online: 'Online Course'
+  },
+  zh: {
+    appName: '董总员工培训与积分管理系统',
+    appSubName: '董总职员专业研修与学分管理服务平台',
+    roleLabel: '当前角色',
+    switchRole: '切换身份',
+    staffUser: '董总职员',
+    hrAdmin: '人事处管理员',
+    langToggle: 'English',
+    logout: '退出登录',
+    welcomeBack: '欢迎您',
+    systemTitle: '董总培训系统',
+
+    // Tabs / Navigation
+    dashboard: '信息仪表板',
+    myRecords: '我的培训记录',
+    submitRecord: '申报培训记录',
+    upcomingTraining: '最新培训资讯',
+    trainingPolicy: '培训制度与政策',
+    allSubmissions: '审核申报管理',
+    staffProfiles: '职员资料管理',
+    pointScheme: '积分换算标准',
+    generateReports: '报表与审计日志',
+
+    // Statuses
+    pending: '等待审核',
+    verified: '审核通过',
+    rejected: '已驳回',
+    reqCorrection: '需重新提交',
+
+    // Fields Description
+    staffName: '职员英文姓名',
+    staffChineseName: '中文姓名',
+    department: '所属部门 / 处室',
+    trainingTitle: '培训/研讨会名称',
+    organiser: '主办/举办单位',
+    trainingType: '培训类别',
+    trainingDate: '培训开始日期',
+    trainingEndDate: '培训结束日期 (多日培训选填)',
+    lecturer: '授课讲师/主讲专家 (选填)',
+    trainingTime: '培训时间段/具体日程表 (选填)',
+    durationHours: '培训总时数 (小时)',
+    venuePlatform: '培训地点 / 平台',
+    description: '培训详细内容概要',
+    supportDocument: '佐证材料证明 (如证书、签到记录PDF或图片)',
+    submissionDate: '申报提交日期',
+    status: '审核状态',
+    hrRemarks: '人事处审核评语',
+    uploadPlaceholder: '拖拽文件至此，或点击浏览上传',
+    uploadSuccess: '文件上传成功',
+
+    // Point calculations
+    accumulatedPoints: '已审核通过积分',
+    accumulatedHours: '已审核通过时数',
+    pointsToMax: '距离年度上限积分',
+    pendingHours: '审核中时数',
+    yearlyMaxReached: '已达年度最高积分！',
+    ruleFormula: '积分换算公式',
+    pointsShort: '分',
+    hoursShort: '小时',
+    maximumAllowedAnnual: '每年封顶最高积分',
+
+    // Buttons / actions
+    submit: '提交申报',
+    edit: '编辑修改',
+    delete: '删除记录',
+    cancel: '取消',
+    saveChanges: '保存更改',
+    exportCsv: '导出 CSV 文件',
+    exportExcel: '导出 Excel 文件',
+    verify: '审核通过',
+    reject: '驳回申请',
+    requestCorrection: '退回更正',
+    addRemarks: '更新评语',
+    addAnnouncement: '发布新培训资讯',
+    editAnnouncement: '修改资讯公告',
+    policyEdit: '修改培训政策文件',
+    searchPlaceholder: '输入名称、主办方或地点快速搜索...',
+    filterDepartment: '所有部门/处室',
+    filterStatus: '所有审核状态',
+    filterType: '所有培训类别',
+
+    // Announcement components
+    targetParticipants: '目标参与对象',
+    category: '培训范畴标签',
+    deadline: '报名截止日期',
+    regLink: '在线报名链接',
+    contactPerson: '部门业务联系人',
+    archive: '归档公告',
+    publish: '正式发布',
+    activeAnnouncements: '征募中的培训',
+    archivedAnnouncements: '历史归档资讯',
+
+    // HR Dashboard summary
+    totalSubmissions: '全员申报总数',
+    recordsVerified: '已审核通过数',
+    recordsRejected: '已驳回数',
+    reachedTarget: '已达成10分年度目标人数',
+    notReachedTarget: '未满10分职员人数',
+    deptSummary: '各部门参培分析',
+    actions: '行政操作',
+
+    // Reports Title
+    reportType: '报表类型',
+    generateButton: '生成报表分析',
+    exportReport: '导出并生成电子表',
+
+    // Types translations
+    internal: '内部培训',
+    external: '外部培训',
+    seminar: '研讨与座谈会',
+    workshop: '工作坊与培训班',
+    conference: '学术会议与研讨会',
+    online: '数字线上课程'
+  }
+};
